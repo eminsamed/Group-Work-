@@ -1,0 +1,157 @@
+/* Text Elements */
+
+h1 {
+  margin-bottom: .75rem;
+  color: #dae4e9;
+  letter-spacing: -.015em;
+  font-weight: 700;
+  font-size: 16vmin;
+  font-family: 'Arimo', cursive;
+  line-height: 1;
+}
+
+/** For part of the title to become red, you would have needed to add a new HTML tag to index and then style it. */
+h1 span {
+  color: deeppink;
+}
+
+aside p {
+  text-indent: 0vw;
+  font-weight: 700;
+  font-size: .9rem;
+  font-family: 'Arimo', cursive;
+}
+
+p {
+  margin-bottom: 0;
+  color: #dae4e9;
+  text-indent: 2vw;
+  font-size: .8rem;
+  font-family: 'Lora', cursive;
+}
+
+/* Layout Elements */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0c0b11;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+main {
+  padding: 2vh 4vw;
+}
+
+/** This change makes sure that there is no horizontal scrollbar */
+img {
+  max-width: 100%;
+}
+
+.fig-1 {
+  max-width: 240px;
+}
+
+picture {
+  margin-bottom: 1.5rem;
+  min-width: 0;
+  max-width: none;
+}
+
+.fig-2 {
+  display: none;
+}
+
+@supports (display: grid) {
+  /* Text Elements */
+
+  h1 {
+    grid-area: title;
+  }
+
+  /* Layout Elements */
+  /** align-self makes sure, that this element is centered. Be wware that the CSS is mobile-first. */
+  aside {
+    grid-area: aside;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+            align-self: center;
+  }
+
+  section {
+    padding-left: 0vw;
+    grid-area: main;
+  }
+  /** Grid layout for mobile: 4 rows and 4 columns. The areas have to be set differently than on desktop */
+  main {
+    display: grid;
+
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , auto);
+    grid-template-areas: 'fig-1 aside aside aside' 'fig-1 title title title' 'banner banner banner banner' '. main main main';
+    grid-column-gap: 2vw;
+  }
+
+  .fig-1 {
+    grid-area: fig-1;
+  }
+
+  picture {
+    grid-area: banner;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  @supports (display: grid) {
+    /* Layout Elements */
+
+    /** These styles are interim for tablet. There was no design for that, so it did not count for the grading. */
+    main {
+      padding-top: 2vh;
+
+      grid-row-gap: 1rem;
+      grid-template-areas: 'fig-1 . . aside aside' '. title title title title' 'banner banner banner banner .' '. main main main main';
+      grid-template-columns: repeat(5 , 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .fig-2 {
+    display: block;
+  }
+
+  @supports (display: grid) {
+      /* Layout Elements */
+
+    main {
+      padding-right: 0vw;
+      padding-left: 0vw;
+
+      grid-template-areas: '. aside . fig-2 fig-2' 'title title banner banner banner' 'fig-1 main banner banner banner';
+      grid-template-rows: repeat(3 , auto);
+      grid-template-columns: repeat(5 , 1fr);
+    }
+
+    section {
+      -webkit-column-width: 12em;
+         -moz-column-width: 12em;
+              column-width: 12em;
+      -webkit-column-gap: 1.5rem;
+         -moz-column-gap: 1.5rem;
+              column-gap: 1.5rem;
+    }
+
+    .fig-2 {
+      margin-bottom: .75rem;
+
+      grid-area: fig-2;
+    }
+  }
+}

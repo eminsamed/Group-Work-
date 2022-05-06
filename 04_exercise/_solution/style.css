@@ -1,0 +1,95 @@
+html {
+    background-color: #ffffff;
+	box-sizing: border-box;
+	font-size: 10px;
+	line-height: 1;
+	height: 100%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	width: 100%
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit; 
+}
+
+* {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	font-smooth: always;
+	line-height: 1.47;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: azure;
+    margin: 2.5rem auto;
+    max-width: 60rem;
+    padding: 2rem 5rem 5rem;
+    width: 90vw;
+}
+
+h1 {
+    color: #008cba;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 2rem 0;
+}
+
+h2 {
+    color: #008cba;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 2rem 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    margin: 2rem 0 0.5rem;
+}
+
+button {
+    background-color: #008cba;
+    border: 1px solid #008cba;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #008cba;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+th,td {
+    border-top: 1px solid #008cba;
+    padding: 1rem 0;
+}
+
+td:last-child {
+    text-align: right;
+}

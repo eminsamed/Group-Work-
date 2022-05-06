@@ -1,0 +1,170 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+	line-height: 1;
+	height: 100%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	width: 100%
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit; 
+}
+
+* {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	font-smooth: always;
+	line-height: 1.47;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+h2 {
+    color: mediumturquoise;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: #aaaaaa;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 1rem 2rem;
+}
+
+header {
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+}
+
+body > nav {
+    border-right: 1px solid #dddddd;
+}
+
+body > nav li {
+    border-bottom: 1px solid #dddddd;
+}
+
+main {
+    background: #f0f0f0;
+}
+
+article {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    margin: 1rem 3rem;
+    padding: 1rem;
+}
+
+aside {
+    border-left: 1px solid #dddddd;
+}
+
+aside ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside li {
+    align-items: center;
+    border: 1px solid #dddddd;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    margin: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside li::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+footer {
+    background: #222222;
+}
+
+footer ul {
+    margin: 2rem;
+    text-align: right;
+}
+
+footer li {
+    padding: 0.5rem 0;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;    
+    } 
+    header, 
+    footer {
+        width: 100%;
+    }
+    main {
+        flex: 8;
+        order: 2;
+        min-height: 66.2vh;
+    }
+    
+    nav {
+        flex: 2;
+        order: 1;
+    }
+
+    aside {
+        flex: 1;
+        order: 3;
+    }
+
+    aside li::before {
+      padding-bottom: 130%;
+    }
+
+    footer {
+        order: 4;
+    }
+}
