@@ -1,5 +1,8 @@
 # Powercoders Coding Day
-Coding Day 2022-2 / Powercoders Switzerland bootcamp
+Coding Day 2022-2 / Powercoders Switzerland bootcamp<br><br>
+
+First part / Morning: Group work – exercises n°1<br>
+Second part / Afternoon: Individual work – exercises n°2 to 8
 
 1. Fork the powercoders/coding_day repo from Github
 
@@ -9,14 +12,12 @@ Coding Day 2022-2 / Powercoders Switzerland bootcamp
 
 3. Read every exercise's README carefully, before you start coding.
 
-4. Best to read the first 7 exercises first and check the estimated times, before you start.
+4. Morning: Exercise 1 is group work
 
-4. Exercise 8 is group work in the morning
+4. Afternoon: Best to read the first 7 exercises first and check the estimated times, before you start.
 
 5. Commit every exercise to your local repo, **NOT** Github.
 
-First part: Group work – exercises 8
-Second part: Individual work – exercises 1 to 7
 
 
 **At 12:30 pm sharp (for the first part) and 4.00 pm sharp (for the second part) push your whole repo to Github and add the link to the repo when you turn in the Google Classroom assignment. Please include your name in the repo name.**
