@@ -19,7 +19,7 @@ Team work:
 - discuss together what you have to do
 - split the tasks (in pairs or single responsibles)
 - put your code together and on GitHub
-- present your quiz at the end of the day (5 to 10 min per group / every team member has to say something)
+- present your quiz at the end of the morning (5 to 10 min per group / every team member has to say something)
 
 Estimated time: 2 hours 30 minutes <br>
 plus presentation: 5 to 10 minutes <br>
