@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70237b74b7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                    auto_stories
+                </span>
+                <h1 class="title">Library</h1>
+            </div>
+            <button class="add-book-btn">+</button>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="book-grid">
+            <div class="book-card read">
+                <p class="book-title">Bill Gates</p>
+                <p class="book-author">The Road Ahead</p>
+                <p class="book-pages">10 CHF</p>
+                <div class="button-group">
+                    <i id="sample" class="fa-solid fa-book-open" title="have read"></i>
+                    <i class="fa-solid fa-pen-to-square" title="edit"></i>
+                    <i class="fa-solid fa-trash-can" title="remove"></i>
+                </div>
+            </div>
+            <div class="book-card read">
+                <p class="book-title">Steve Jobs</p>
+                <p class="book-author">Walter Isaacson</p>
+                <p class="book-pages">15 CHF</p>
+                <div class="button-group">
+                    <i id="sample" class="fa-solid fa-book-open" title="have read"></i>
+                    <i class="fa-solid fa-pen-to-square" title="edit"></i>
+                    <i class="fa-solid fa-trash-can" title="remove"></i>
+                </div>
+            </div>
+            <div class="book-card read">
+                <p class="book-title">Mockingjay: The Final Book of The Hunger Games</p>
+                <p class="book-author">Suzanne Collins</p>
+                <p class="book-pages">20 CHF</p>
+                <div class="button-group">
+                    <i id="sample" class="fa-solid fa-book-open" title="have read"></i>
+                    <i class="fa-solid fa-pen-to-square" title="edit"></i>
+                    <i class="fa-solid fa-trash-can" title="remove"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Modal-->
+    <div class="modal-container">
+        <form class="add-book-form" method="post">
+            <span class="modal-close-btn">&times;</span>
+            <h1>Add New Book</h1>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Price" required>
+
+            <!-- Toggle Button-->
+            <div class="toggle-button">
+                <p class="label">Have you read this book?</p>
+                <label class="switch">
+                    <input type="checkbox" id="status">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <button class="button submit" type="submit">Submit</button>
+        </form>
+  </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
